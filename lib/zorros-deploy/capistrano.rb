@@ -1,7 +1,7 @@
 require 'git'
 Capistrano::Configuration.instance(:must_exist).load do
 
-  # Create a task after updating the code
+  # Create a tag after updating the code
   after "deploy:update_code", "zorros:tag_release"
 
   namespace :zorros do
