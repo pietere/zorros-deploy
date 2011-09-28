@@ -20,4 +20,7 @@ Gem::Specification.new do |s|
 
   # specify any dependencies here; for example:
   s.add_runtime_dependency "capistrano"
+  s.add_runtime_dependency "git"
+
+  s.add_development_dependency "pry"
 end
