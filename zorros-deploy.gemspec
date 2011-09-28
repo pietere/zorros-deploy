@@ -5,11 +5,11 @@ require "zorros-deploy/version"
 Gem::Specification.new do |s|
   s.name        = "zorros-deploy"
   s.version     = Zorros::Deploy::VERSION
-  s.authors     = ["Francisco J."]
-  s.email       = ["nflamel@otrobloggeek.com"]
+  s.authors     = ["Francisco J. Casas, Zorros"]
+  s.email       = ["hello@zorros.be"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Some common capistrano tasks for all our applications}
+  s.description = %q{Some common capistrano tasks for all our applications}
 
   s.rubyforge_project = "zorros-deploy"
 
@@ -19,6 +19,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
+  s.add_runtime_dependency "capistrano"
 end
