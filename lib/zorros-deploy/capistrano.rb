@@ -3,6 +3,7 @@ Capistrano::Configuration.instance(:must_exist).load do
 
   # Create a tag after updating the code
   after "deploy:update_code", "zorros:tag_release"
+  after "deploy:migrations", "zorros:tag_release"
 
   namespace :zorros do
     desc "Create a GIT tag on each deploy"
