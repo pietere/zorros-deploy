@@ -19,7 +19,7 @@ Capistrano::Configuration.instance(:must_exist).load do
                  end
 
       git.add_tag tag_name
-      git.push
+      git.push "origin", "master", true
     end
   end
 end
