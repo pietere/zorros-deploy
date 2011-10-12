@@ -9,7 +9,7 @@ Capistrano::Configuration.instance(:must_exist).load do
     desc "Create a GIT tag on each deploy"
     task :tag_release do
       git = Git.open "."
-      tag_date = Time.now.strftime("%d-%m-%Y")
+      tag_date = Time.now.strftime("%Y-%m-%d")
       tag_number = git.tags.collect { |t| t.name =~ %r{#{tag_date}} }.compact.size
 
       tag_name = if tag_number > 0
