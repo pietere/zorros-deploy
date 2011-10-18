@@ -1,4 +1,9 @@
 
+v.0.0.4 / 2011-10-18 
+==================
+
+  * change date tag format in order to have them ordered at github drop-down
+
 v.0.0.3 / 2011-09-29 
 ==================
 
